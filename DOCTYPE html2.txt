@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Тест на женскую энергию — Елена Жаворонкова</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:linear-gradient(180deg,#fff8fb,#fff,#fff3f7);
+color:#4b2d38;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+header{
+padding:60px 0 30px;
+text-align:center;
+}
+
+.avatar{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid rgba(212,175,55,0.6);
+box-shadow:0 10px 35px rgba(212,175,55,0.25);
+margin-bottom:25px;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
+font-weight:700;
+color:#b8860b;
+margin-bottom:12px;
+}
+
+.project{
+font-size:20px;
+color:#a85d74;
+margin-bottom:22px;
+}
+
+.slogan{
+font-family:'Cormorant Garamond',serif;
+font-size:30px;
+font-style:italic;
+max-width:700px;
+margin:auto;
+line-height:1.5;
+color:#7f4b5d;
+}
+
+.test-box{
+margin:60px auto;
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(12px);
+border-radius:30px;
+padding:45px 30px;
+box-shadow:0 15px 45px rgba(232,175,195,0.25);
+border:1px solid rgba(255,215,0,0.15);
+}
+
+.test-title{
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+margin-bottom:15px;
+color:#b8860b;
+}
+
+.test-subtitle{
+text-align:center;
+font-size:18px;
+color:#7a5664;
+margin-bottom:40px;
+line-height:1.7;
+}
+
+.question{
+margin-bottom:35px;
+padding:25px;
+background:white;
+border-radius:22px;
+box-shadow:0 5px 18px rgba(233,190,205,0.15);
+}
+
+.question h3{
+font-size:22px;
+margin-bottom:20px;
+color:#9c5872;
+font-weight:600;
+}
+
+label{
+display:block;
+padding:12px 15px;
+margin-bottom:10px;
+border-radius:14px;
+background:#fff7fa;
+cursor:pointer;
+transition:0.3s;
+}
+
+label:hover{
+background:#ffe9f2;
+}
+
+input[type="radio"]{
+margin-right:10px;
+}
+
+button{
+display:block;
+margin:40px auto 0;
+padding:18px 36px;
+border:none;
+border-radius:50px;
+background:linear-gradient(135deg,#f7b2c8,#d4af37);
+color:white;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(212,175,55,0.3);
+}
+
+button:hover{
+transform:translateY(-2px) scale(1.02);
+}
+
+.result{
+display:none;
+margin-top:45px;
+padding:35px;
+background:#fffaf4;
+border-radius:24px;
+text-align:center;
+box-shadow:0 10px 25px rgba(212,175,55,0.15);
+}
+
+.result h2{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+margin-bottom:18px;
+color:#b8860b;
+}
+
+.result p{
+font-size:18px;
+line-height:1.8;
+color:#6e4b58;
+}
+
+.telegram{
+display:inline-block;
+margin-top:30px;
+padding:18px 34px;
+background:#b8860b;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:0.3s;
+}
+
+.telegram:hover{
+background:#9d7206;
+}
+
+footer{
+text-align:center;
+padding:35px 20px;
+margin-top:70px;
+font-size:14px;
+color:#8c7280;
+border-top:1px solid rgba(212,175,55,0.15);
+}
+
+.glow{
+position:fixed;
+width:320px;
+height:320px;
+border-radius:50%;
+background:rgba(255,192,203,0.2);
+filter:blur(90px);
+z-index:-1;
+}
+
+.glow1{
+top:-120px;
+left:-100px;
+}
+
+.glow2{
+bottom:-120px;
+right:-100px;
+}
+
+@media(max-width:768px){
+
+.logo{
+font-size:42px;
+}
+
+.slogan{
+font-size:24px;
+}
+
+.test-title{
+font-size:34px;
+}
+
+.question h3{
+font-size:20px;
+}
+
+button,
+.telegram{
+width:100%;
+}
+
+.avatar{
+width:140px;
+height:140px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<header class="container">
+
+<img src="photo_2026-05-19_19-59-38.jpg" alt="Елена Жаворонкова" class="avatar">
+
+<h1 class="logo">Елена Жаворонкова</h1>
+
+<div class="project">
+Тебе таро или гороскоп? Звони Жаворонковой
+</div>
+
+<div class="slogan">
+Когда женщина выбирает себя — её энергия начинает менять весь мир вокруг ✨
+</div>
+
+</header>
+
+<section class="container">
+
+<div class="test-box">
+
+<h2 class="test-title">Тест на женскую энергию 💖</h2>
+
+<p class="test-subtitle">
+Ответь на несколько вопросов и узнай,
+насколько раскрыта твоя женская энергия прямо сейчас.
+</p>
+
+<form id="energyTest">
+
+<div class="question">
+<h3>1. Как часто ты ставишь себя на первое место?</h3>
+
+<label><input type="radio" name="q1" value="1"> Почти никогда</label>
+<label><input type="radio" name="q1" value="2"> Иногда</label>
+<label><input type="radio" name="q1" value="3"> Часто</label>
+
+</div>
+
+<div class="question">
+<h3>2. Легко ли тебе принимать комплименты и заботу?</h3>
+
+<label><input type="radio" name="q2" value="1"> Мне неловко</label>
+<label><input type="radio" name="q2" value="2"> Иногда принимаю</label>
+<label><input type="radio" name="q2" value="3"> Да, с удовольствием</label>
+
+</div>
+
+<div class="question">
+<h3>3. Чувствуешь ли ты себя привлекательной?</h3>
+
+<label><input type="radio" name="q3" value="1"> Редко</label>
+<label><input type="radio" name="q3" value="2"> Иногда</label>
+<label><input type="radio" name="q3" value="3"> Да, почти всегда</label>
+
+</div>
+
+<button type="button" onclick="showResult()">
+Узнать результат ✨
+</button>
+
+</form>
+
+<div class="result" id="resultBox">
+
+<h2 id="resultTitle"></h2>
+
+<p id="resultText"></p>
+
+<a class="telegram" href="https://t.me/AlenaZhavarankava" target="_blank">
+Записаться к @AlenaZhavarankava
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+Елена Жаворонкова • Тебе таро или гороскоп? Звони Жаворонковой
+</footer>
+
+<script>
+
+function showResult(){
+
+let total = 0;
+
+const answers = document.querySelectorAll('input[type="radio"]:checked');
+
+answers.forEach(answer => {
+total += Number(answer.value);
+});
+
+if(answers.length < 3){
+alert("Ответь на все вопросы ✨");
+return;
+}
+
+const resultBox = document.getElementById("resultBox");
+const resultTitle = document.getElementById("resultTitle");
+const resultText = document.getElementById("resultText");
+
+resultBox.style.display = "block";
+
+if(total <= 4){
+
+resultTitle.innerText = "Твоя энергия просыпается 🌸";
+
+resultText.innerText = "Сейчас тебе особенно важно научиться выбирать себя, слышать свои желания и разрешить себе заботу. Женская энергия раскрывается через любовь к себе и принятие своей ценности.";
+
+}
+
+else if(total <= 7){
+
+resultTitle.innerText = "Ты раскрываешь свою силу ✨";
+
+resultText.innerText = "Твоя женская энергия уже начинает сиять. Ты учишься принимать себя, доверять интуиции и позволять себе больше удовольствия и любви.";
+
+}
+
+else{
+
+resultTitle.innerText = "Ты в потоке женской энергии 💖";
+
+resultText.innerText = "Ты умеешь принимать любовь, заботу и внимание. Твоя энергия притягивает людей, возможности и вдохновение. Продолжай выбирать себя и своё счастье.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
